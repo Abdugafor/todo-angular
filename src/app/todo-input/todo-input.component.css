@@ -1,0 +1,30 @@
+input {
+    width: 100%;
+    border: none;
+    padding: 22px 20px 22px 60px;
+    box-sizing: border-box;
+    outline: none;
+    background: var(--Dark-theme-Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.input-cont {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 17px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    left: 17px;
+}
+
+.lightMode {
+    background: var(--Light-Theme-Very-Light-Gray);
+    color: var(--Dark-theme-Very-Dark-Blue);
+}

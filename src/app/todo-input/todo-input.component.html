@@ -1,0 +1,14 @@
+<div class="input-cont">
+    <input 
+        type="text" 
+        placeholder="Create a new todo..." 
+        [ngClass]="isDarkMode ? 'darkMode' : 'lightMode'" 
+        [(ngModel)]="inputValue"
+        (keyup.enter)="addTodo(inputValue)"
+    >
+    
+    <div 
+        class="circle"
+        (click)="addTodo(inputValue)"
+    ></div>
+</div>

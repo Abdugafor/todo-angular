@@ -1,0 +1,25 @@
+.filters-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: gray;
+    font-size: 15px;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+}
+
+.active {
+    color: var(--Primary-Bright-Blue);
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.itemLeft {
+    cursor: default !important;
+}
+

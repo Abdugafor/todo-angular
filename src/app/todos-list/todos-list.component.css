@@ -1,0 +1,15 @@
+.list {
+    background: var(--Dark-theme-Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+
+}
+
+ul {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.lightMode {
+    background: var(--Light-Theme-Very-Light-Gray);
+    color: var(--Dark-theme-Very-Dark-Blue);
+}

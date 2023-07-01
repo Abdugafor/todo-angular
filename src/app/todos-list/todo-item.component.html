@@ -1,0 +1,11 @@
+<li>
+    <label class="container" [htmlFor]="todoId">
+        <div class="child">
+            <input [checked]="isTodoDone" type="checkbox"  id="todoId">
+            <div class="checkmark"></div>
+            <span [ngClass]="isTodoDone? 'done' : ''" (click)="onTodoClick()">{{todoTitle}}</span>
+        </div>
+
+        <img src="../assets/icon-cross.svg" alt="" class="cross" (click)="onCrossClick()">
+    </label>
+</li>

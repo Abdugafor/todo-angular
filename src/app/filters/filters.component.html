@@ -1,0 +1,23 @@
+<div class="filters-div">
+    <span class="itemLeft">{{itemsLeft}} items left</span>
+
+    <div class="filters">
+        <span 
+            (click)="onClick($event)" 
+            [ngClass]="filterActive === 'All' ? 'active' : '' " 
+            #All
+        >All</span>
+
+        <span 
+         (click)="filterActive = 'Active'" 
+         [ngClass]="filterActive === 'Active' ? 'active' : '' " 
+        >Active</span>
+
+        <span 
+            (click)="filterActive = 'Completed'"
+            [ngClass]="filterActive === 'Completed' ? 'active' : '' " 
+        >Completed</span>
+    </div>
+
+    <span (click)="clearDone()">Clear Completed</span>
+</div>

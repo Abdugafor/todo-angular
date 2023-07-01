@@ -1,0 +1,15 @@
+<div class="list" [ngClass]="isDarkMode ? '' : 'lightMode' ">
+    <ul>
+        <app-todo-item 
+            *ngFor="let todo of todosList" 
+            [todoTitle]="todo.title"
+            [isTodoDone]="todo.done"
+            [todoId]="todo.id"
+            (idEvent)="addId($event)"
+            (crossId)="addCrossId($event)"
+        ></app-todo-item>
+    </ul>
+
+
+    <ng-content></ng-content>
+</div>

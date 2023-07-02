@@ -9,12 +9,12 @@
         >All</span>
 
         <span 
-         (click)="filterActive = 'Active'" 
+        (click)="onClick($event)" 
          [ngClass]="filterActive === 'Active' ? 'active' : '' " 
         >Active</span>
 
         <span 
-            (click)="filterActive = 'Completed'"
+        (click)="onClick($event)" 
             [ngClass]="filterActive === 'Completed' ? 'active' : '' " 
         >Completed</span>
     </div>

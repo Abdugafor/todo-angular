@@ -25,7 +25,10 @@ export class FiltersComponent  {
   }
 
   onClick(value) {
-    this.filActive.emit(value.target.textContent)
+    const filterName = value.target.textContent
+    
+    this.filActive.emit(filterName)
+    this.filterActive = filterName
   }
 
 }

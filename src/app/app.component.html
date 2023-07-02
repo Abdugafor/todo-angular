@@ -24,6 +24,7 @@
          (clearDoneTodos)="clearDoneTodos()"
          [todosList]="todosList"
          [itemsLeft]="calcItemsLeft()"
+         (filActive)="onClickFilter($event)"
       ></app-filters>
     </app-todos-list>
   </main>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AppService } from './app.service';
 
 @Component({
@@ -6,7 +6,8 @@ import { AppService } from './app.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit{
   isDarkMode = true
   
   todosList = [
@@ -15,7 +16,15 @@ export class AppComponent {
     {title: 'Programming assignment', done: false }, 
   ].map((todo) => ({...todo, id: this.appService.generateRandomId()}))
 
+  allTodos: any
+  activeTodos: any
+  completedTodos: any
+
   constructor (private appService: AppService) {}
+
+  ngOnInit(): void {
+    this.allTodos = this.todosList
+  }
 
   onChangeMode() {
     console.log('changed')
@@ -30,6 +39,8 @@ export class AppComponent {
     if(value !== '') {
       this.todosList.push({title: value, done: false, id: this.appService.generateRandomId()})
     }
+    this.allTodos = this.todosList
+
   }
 
   changeTodoDone(todoId: string) {
@@ -50,6 +61,17 @@ export class AppComponent {
 
   onCrossDelete(todoid) {
     this.todosList = this.todosList.filter(item => item.id !== todoid)
+  }
+
+  onClickFilter(filterName) {
+    
+    if (filterName === 'Active') {
+      this.todosList = this.allTodos.filter(item => !item.done)
+    }else if (filterName === 'Completed') {
+      this.todosList = this.allTodos.filter(item => item.done)
+    }else [
+      this.todosList = this.allTodos
+    ]
   }
 }
 

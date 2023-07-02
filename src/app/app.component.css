@@ -3,6 +3,10 @@ header {
     justify-content: space-between;
 }
 
+header h1 {
+    letter-spacing: 10px;
+}
+
 header img {
     width: 33px;
     height: 33px;
@@ -57,4 +61,16 @@ header img {
     background-image: url(../assets/bg-desktop-light.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media all and (max-width: 900px) {
+
+    .container {
+        top: -3%;
+        max-width: 366px;
+    }
+
+    .img-block {
+        background-image: url(../assets/bg-mobile-dark.jpg);
+    }
 }

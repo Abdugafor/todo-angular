@@ -93,3 +93,23 @@ li {
   label:hover .cross {
     display: block;
   }
+
+  
+@media all and (max-width: 900px) {
+  .checkmark, .checkmark::after {
+    width: 0.80em;
+    height: 0.80em;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    left: 0.25em;
+    top: 0.09em;
+    width: 0.15em;
+    height: 0.3em;
+  }
+
+  .cross {
+    display: block;
+    width: 14px;
+  }
+}

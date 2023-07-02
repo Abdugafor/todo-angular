@@ -23,3 +23,12 @@ span:hover {
     cursor: default !important;
 }
 
+@media all and (max-width: 900px) {
+    .filters-div span {
+        font-size: 11px;
+    }
+
+    .filters {
+        gap: 7px;
+    }
+}

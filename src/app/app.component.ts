@@ -27,7 +27,9 @@ export class AppComponent {
   }
 
   addTodo(value: string) {
-    this.todosList.push({title: value, done: false, id: this.appService.generateRandomId()})
+    if(value !== '') {
+      this.todosList.push({title: value, done: false, id: this.appService.generateRandomId()})
+    }
   }
 
   changeTodoDone(todoId: string) {

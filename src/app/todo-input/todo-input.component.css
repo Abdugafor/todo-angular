@@ -28,3 +28,14 @@ input {
     background: var(--Light-Theme-Very-Light-Gray);
     color: var(--Dark-theme-Very-Dark-Blue);
 }
+
+@media all and (max-width: 900px) {
+    input {
+        font-size: 15px;
+    }
+
+    .circle {
+        width: 18px;
+        height: 18px;
+    }
+}

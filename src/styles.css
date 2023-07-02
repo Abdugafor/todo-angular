@@ -36,3 +36,15 @@ body {
     color: white;
 }
 
+
+
+@media all and (max-width: 900px) {
+
+    ul li , span{
+        font-size: 15px;
+    }
+
+    ul li {
+        padding: 13px;
+    }
+}

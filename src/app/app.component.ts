@@ -53,6 +53,8 @@ export class AppComponent implements OnInit{
 
   clearDoneTodos() {
     this.todosList = this.todosList.filter(item => !item.done)
+
+    this.allTodos = this.todosList
   }
 
   calcItemsLeft() {

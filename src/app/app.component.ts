@@ -10,8 +10,8 @@ export class AppComponent {
   isDarkMode = true
   
   todosList = [
-    {title: 'Go for a walk', done: false },
-    {title:  'Wash the dishes', done: false },
+    {title: 'Housework', done: false },
+    {title:  'Go to the gym', done: false },
     {title: 'Programming assignment', done: false }, 
   ].map((todo) => ({...todo, id: this.appService.generateRandomId()}))
 

@@ -74,3 +74,9 @@ header img {
         background-image: url(../assets/bg-mobile-dark.jpg);
     }
 }
+
+@media all and (max-width: 750px) {
+    .container {
+        max-width: 314px;
+    }
+}

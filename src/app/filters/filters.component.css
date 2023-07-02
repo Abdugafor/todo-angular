@@ -32,3 +32,9 @@ span:hover {
         gap: 7px;
     }
 }
+
+@media all and (max-width: 750px) {
+    .filters span {
+        font-size: 9px;
+    }
+}

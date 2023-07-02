@@ -1,7 +1,7 @@
 <li>
     <label class="container" [htmlFor]="todoId">
         <div class="child">
-            <input [checked]="isTodoDone" type="checkbox"  id="todoId">
+            <input [checked]="isTodoDone" type="checkbox" >
             <div class="checkmark"></div>
             <span [ngClass]="isTodoDone? 'done' : ''" (click)="onTodoClick()">{{todoTitle}}</span>
         </div>

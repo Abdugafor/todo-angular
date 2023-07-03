@@ -1,5 +1,5 @@
-<div class="list" [ngClass]="isDarkMode ? '' : 'lightMode' ">
-    <ul>
+<div class="list" [ngClass]="isDarkMode ? '' : 'lightMode' " cdkDropListGroup>
+    <ul cdkDropList [cdkDropListData]="todosList" (cdkDropListDropped)="drop($event)">
         <app-todo-item 
             *ngFor="let todo of todosList" 
             [todoTitle]="todo.title"
@@ -7,6 +7,7 @@
             [todoId]="todo.id"
             (idEvent)="addId($event)"
             (crossId)="addCrossId($event)"
+            [isDarkMode]="isDarkMode"
         ></app-todo-item>
     </ul>
 

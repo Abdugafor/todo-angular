@@ -75,6 +75,11 @@ header img {
     }
 }
 
+.dragDrop {
+    color: var(--Light-Theme-Very-Dark-Grayish-Blue);
+    text-align: center;
+    margin-top: 20px;
+}
 @media all and (max-width: 750px) {
     .container {
         max-width: 314px;

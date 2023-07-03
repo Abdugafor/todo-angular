@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { transferArrayItem } from '@angular/cdk/drag-drop'
 
 @Component({
   selector: 'app-todos-list',
@@ -19,5 +20,14 @@ export class TodosListComponent {
 
   addCrossId(todoId: string) {
     this.crossId.emit(todoId)
+  }
+
+  drop(event) {
+    transferArrayItem(
+      event.previousContainer.data,
+      event.container.data,
+      event.previousIndex,
+      event.currentIndex
+    )
   }
 } 

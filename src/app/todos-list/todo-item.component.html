@@ -1,4 +1,4 @@
-<li>
+<li cdkDrag [ngClass]="isDarkMode ? '' : 'light' ">
     <label class="container" [htmlFor]="todoId">
         <div class="child">
             <input [checked]="isTodoDone" type="checkbox" >

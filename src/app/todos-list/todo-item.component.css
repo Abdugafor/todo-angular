@@ -122,4 +122,8 @@ label {
     display: block;
     width: 14px;
   }
+
+  label {
+    padding: 13px;
+  }
 }
